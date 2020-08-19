@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertarCliente">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_titulo_clientes_crud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100sp"
+                android:gravity="center_horizontal"
+                android:text="Modificar Clientes"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/et_id_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_titulo_clientes_crud"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="60sp"
+                android:gravity="center_horizontal"
+                android:hint="Código"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_nombre_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_id_cliente_insertar"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="60sp"
+                android:gravity="center_horizontal"
+                android:hint="Nombre"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_apellido_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_nombre_cliente_insertar"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="60sp"
+                android:gravity="center_horizontal"
+                android:hint="Apellido"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_telefono_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_apellido_cliente_insertar"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="60sp"
+                android:gravity="center_horizontal"
+                android:hint="Teléfono"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_direccion_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_telefono_cliente_insertar"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="60sp"
+                android:gravity="center_horizontal"
+                android:hint="Dirección"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_correp_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_direccion_cliente_insertar"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="60sp"
+                android:gravity="center_horizontal"
+                android:hint="E-mail"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_insertar_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_correp_cliente_insertar"
+                android:layout_marginLeft="90sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="90sp"
+                android:onClick="onClikInsertarCliente"
+                android:text="Guardar"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_regresar_insertar_cliente_insertar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_insertar_cliente_insertar"
+                android:layout_marginLeft="90sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="90sp"
+                android:text="Regresar"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

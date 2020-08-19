@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_titulo_cliente_lista"
+        android:text="Lista Clientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/tv_item_cliente_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Cliente Código"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        />
+    <TextView
+        android:id="@+id/tv_item_nombre_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        android:text="Nombre"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_item_apellido_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        android:text="Apellido"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_item_telefono_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        android:text="Teléfono"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_item_direccion_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        android:text="Dirección"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_item_correo_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        android:text="E-mail"
+        android:textSize="20sp"
+        />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientesCrudActivity"
+    >
+    
+
+    <TextView
+        android:id="@+id/tv_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="¿Que desea realizar?"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="100sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginTop="200sp"
+        />
+    <Button
+        android:id="@+id/btn_agregar_cliente_crud"
+        android:layout_below="@+id/tv_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="249dp"
+        android:layout_marginRight="249dp"
+        android:onClick="onClickAgregarClienteCrud"
+        android:text="Agregar"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/btn_eliminar_cliente_crud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:textSize="15sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="250sp"
+        android:layout_below="@+id/tv_tit"
+        android:onClick="onclickEliminarClienteCrud"
+        />
+    <Button
+        android:id="@+id/btn_actualizar_cliente_crud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textSize="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/btn_eliminar_cliente_crud"
+        android:layout_marginRight="250sp"
+        android:onClick="onClickActualizarClienteCrud"
+        />
+    <Button
+        android:id="@+id/btn_buscar_clientes_crud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Buscar"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/btn_eliminar_cliente_crud"
+        android:layout_marginLeft="250sp"
+        android:onClick="onclickBuscarClienteCrud"
+        />
+</RelativeLayout>

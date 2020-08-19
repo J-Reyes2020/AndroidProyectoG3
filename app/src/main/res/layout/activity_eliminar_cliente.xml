@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EliminarCliente">
+
+    <TextView
+        android:id="@+id/tv_titulo_clientes_crud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar Clientes"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="250sp"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/et_id_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/tv_titulo_clientes_crud"
+        android:textSize="20sp"
+        android:hint="Código"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="60sp"
+        android:layout_marginLeft="60sp"
+        />
+
+    <Button
+        android:id="@+id/btn_eliminar_cliente_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Eliminar"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/et_id_client"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="80sp"
+        android:layout_marginLeft="80sp"
+        android:onClick="onClickEliminarCliente"
+        />
+    <Button
+        android:id="@+id/btn_regresar_eliminar_cliente_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Regresar"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/btn_eliminar_cliente_"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="95sp"
+        android:layout_marginLeft="95sp"
+        />
+
+</RelativeLayout>
