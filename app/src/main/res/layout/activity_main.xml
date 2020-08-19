@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:hint="Empleado"
         android:textColorHint="@color/gris"
+        android:textColor="@color/blanco"
         android:gravity="center_horizontal"
         android:layout_below="@+id/tv_titulo"
         android:layout_marginTop="30sp"
@@ -37,12 +38,14 @@
         android:layout_height="wrap_content"
         android:hint="Contraseña"
         android:textColorHint="@color/gris"
+        android:textColor="@color/blanco"
         android:gravity="center_horizontal"
         android:layout_below="@+id/et_Usuario"
         android:layout_marginTop="30sp"
         android:layout_marginRight="30sp"
         android:layout_marginLeft="30sp"
         android:textSize="25sp"
+        android:inputType="textPassword"
         />
 
     <Button
