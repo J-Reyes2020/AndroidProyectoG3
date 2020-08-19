@@ -4,23 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/negro">
 
 
     <TextView
         android:id="@+id/tv_titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/blanco"
         android:text="Validación de Usuario"
         android:gravity="center_horizontal"
         android:textSize="30sp"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="200sp"
         />
     <EditText
         android:id="@+id/et_Usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Empleado"
+        android:textColorHint="@color/gris"
         android:gravity="center_horizontal"
         android:layout_below="@+id/tv_titulo"
         android:layout_marginTop="30sp"
@@ -33,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
+        android:textColorHint="@color/gris"
         android:gravity="center_horizontal"
         android:layout_below="@+id/et_Usuario"
         android:layout_marginTop="30sp"
@@ -46,12 +50,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="Vlidar Datos"
+        android:text="Validar Datos"
         android:layout_marginTop="40sp"
         android:layout_marginRight="40sp"
         android:layout_marginLeft="40sp"
         android:layout_below="@+id/et_contra_main"
         android:onClick="onClickValidar"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_redondo"
         />
 
 </RelativeLayout>
