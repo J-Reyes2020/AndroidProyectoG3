@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ClientesActivity"
+    android:background="@color/negro"
     >
     <Button
         android:id="@+id/btn_salir_cliente"
@@ -18,6 +19,8 @@
         android:onClick="onclikSalirCliente"
         android:text="Salir"
         android:textSize="20sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
         />
     <Button
         android:id="@+id/btn_agregar_cliente"
@@ -27,6 +30,8 @@
         android:onClick="onclickModificar"
         android:text="Modificar"
         android:textSize="20sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
         />
 
     <androidx.recyclerview.widget.RecyclerView
