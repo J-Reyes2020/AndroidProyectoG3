@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100sp"
                 android:gravity="center_horizontal"
-                android:text="Modificar Clientes"
+                android:text="Agregar Cliente"
                 android:textSize="25sp" />
 
             <EditText
@@ -34,7 +34,8 @@
                 android:layout_marginRight="60sp"
                 android:gravity="center_horizontal"
                 android:hint="Código"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/et_nombre_cliente_insertar"
@@ -46,7 +47,8 @@
                 android:layout_marginRight="60sp"
                 android:gravity="center_horizontal"
                 android:hint="Nombre"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/et_apellido_cliente_insertar"
@@ -58,7 +60,8 @@
                 android:layout_marginRight="60sp"
                 android:gravity="center_horizontal"
                 android:hint="Apellido"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/et_telefono_cliente_insertar"
@@ -70,7 +73,8 @@
                 android:layout_marginRight="60sp"
                 android:gravity="center_horizontal"
                 android:hint="Teléfono"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/et_direccion_cliente_insertar"
@@ -82,7 +86,8 @@
                 android:layout_marginRight="60sp"
                 android:gravity="center_horizontal"
                 android:hint="Dirección"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <EditText
                 android:id="@+id/et_correp_cliente_insertar"
@@ -94,7 +99,8 @@
                 android:layout_marginRight="60sp"
                 android:gravity="center_horizontal"
                 android:hint="E-mail"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                />
 
             <Button
                 android:id="@+id/btn_insertar_cliente_insertar"
@@ -106,7 +112,9 @@
                 android:layout_marginRight="90sp"
                 android:onClick="onClikInsertarCliente"
                 android:text="Guardar"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/boton_redondo"
+                android:textColor="@color/blanco"/>
 
             <Button
                 android:id="@+id/btn_regresar_insertar_cliente_insertar"
@@ -117,7 +125,11 @@
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="90sp"
                 android:text="Regresar"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/boton_redondo"
+                android:textColor="@color/blanco"
+                android:inputType="textNoSuggestions"
+                android:onClick="onClickInsertarClienteRegresar"/>
 
         </LinearLayout>
 
