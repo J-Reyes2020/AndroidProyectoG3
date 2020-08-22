@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/negro">
+    android:background="@color/negro"
+    >
 
 
     <TextView
@@ -55,8 +56,8 @@
         android:textSize="20sp"
         android:text="Validar Datos"
         android:layout_marginTop="40sp"
-        android:layout_marginRight="40sp"
-        android:layout_marginLeft="40sp"
+        android:layout_marginRight="70sp"
+        android:layout_marginLeft="70sp"
         android:layout_below="@+id/et_contra_main"
         android:onClick="onClickValidar"
         android:textColor="@color/blanco"
