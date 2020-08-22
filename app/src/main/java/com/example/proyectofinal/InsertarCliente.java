@@ -2,6 +2,7 @@ package com.example.proyectofinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -77,5 +78,10 @@ public class InsertarCliente extends AppCompatActivity implements Response.Liste
         etTelefono = (EditText)findViewById(R.id.et_telefono_cliente_insertar);
         etDireccion = (EditText) findViewById(R.id.et_direccion_cliente_insertar);
         etCorreo = (EditText) findViewById(R.id.et_correp_cliente_insertar);
+    }
+
+    public void onClickInsertarClienteRegresar(View view) {
+        Intent intent = new Intent(getApplicationContext(),ClientesCrudActivity.class);
+        startActivity(intent);
     }
 }

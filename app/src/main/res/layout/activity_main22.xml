@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity22"
     android:orientation="horizontal"
+    android:background="@color/negro"
     >
 
     <TextView
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="Sea Bienvenido:"
+        android:textColor="@color/blanco"
         />
     <ImageView
         android:id="@+id/iv_imagen"
@@ -29,7 +31,9 @@
         android:layout_below="@+id/bienvenida"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="94dp"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/blanco"
+        />
 
     <TextView
         android:id="@+id/tv_usuario"
@@ -39,6 +43,7 @@
         android:layout_below="@+id/tv_empleado"
         android:textSize="20sp"
         android:layout_marginTop="15sp"
+        android:textColor="@color/blanco"
         />
     <TextView
         android:id="@+id/tv_puesto"
@@ -48,6 +53,7 @@
         android:layout_below="@+id/tv_usuario"
         android:textSize="20sp"
         android:layout_marginTop="20sp"
+        android:textColor="@color/blanco"
         />
 
     <Button
@@ -63,7 +69,10 @@
         android:gravity="center_horizontal"
         android:onClick="onlickCliente"
         android:text="Cliente"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
+        />
 
     <Button
         android:id="@+id/btn_producto"
@@ -78,7 +87,10 @@
         android:gravity="center_horizontal"
         android:onClick="onclickProducto"
         android:text="Producto"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
+        />
 
     <Button
         android:id="@+id/btn_ofertas"
@@ -93,20 +105,24 @@
         android:text="Ofertas"
         android:textSize="20sp"
         android:onClick="onclickOfertas"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
         />
 
     <Button
         android:id="@+id/btn_salie"
-        android:layout_width="211dp"
-        android:layout_height="37dp"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boton_redondo"
         android:onClick="onclicKRegresar"
         android:text="Regresar"
+        android:textColor="@color/blanco"
         android:textSize="15sp" />
 
 </RelativeLayout>

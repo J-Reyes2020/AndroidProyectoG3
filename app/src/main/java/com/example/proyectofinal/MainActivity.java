@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
             empleado.setPuestoId(jsonObject.optInt("puesto_id"));
             empleado.setContraseniaEmp(jsonObject.getString("contrasenia"));
         }catch (JSONException e){
-            e.printStackTrace();
+            System.out.println(e);
+            Toast.makeText(this.getApplicationContext(), "Datos Erroneos "+e, Toast.LENGTH_LONG).show();
         }
         System.out.println(empleado.toString());
         if (empleado.getPuestoId()==1){
