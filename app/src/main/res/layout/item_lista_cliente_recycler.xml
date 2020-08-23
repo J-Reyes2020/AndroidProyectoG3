@@ -8,16 +8,6 @@
 
 
     <TextView
-        android:id="@+id/tv_titulo_cliente_lista"
-        android:text="Lista Clientes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15sp"
-        android:textSize="25sp"
-        android:gravity="center_horizontal"
-        android:textColor="@color/blanco"
-        />
-    <TextView
         android:id="@+id/tv_item_cliente_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,6 +29,7 @@
         android:layout_marginRight="95sp"
         android:text="Nombre"
         android:textSize="20sp"
+        android:textColor="@color/blanco"
         />
     <TextView
         android:id="@+id/tv_item_apellido_cliente"
@@ -74,6 +65,7 @@
         android:layout_marginRight="95sp"
         android:text="Dirección"
         android:textSize="20sp"
+        android:textColor="@color/blanco"
         />
     <TextView
         android:id="@+id/tv_item_correo_cliente"
@@ -86,5 +78,16 @@
         android:text="E-mail"
         android:textSize="20sp"
         android:textColor="@color/blanco"
+        />
+    <TextView
+        android:id="@+id/tv_item_vacio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="15sp"
+        android:textColor="@color/blanco"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
         />
 </LinearLayout>

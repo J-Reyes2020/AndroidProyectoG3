@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".Activity_ofertas"></activity>
+        <activity android:name=".MainActivity3" />
         <activity android:name=".BuscarCliente" />
         <activity android:name=".ModificarCliente" />
         <activity android:name=".InsertarCliente" />
