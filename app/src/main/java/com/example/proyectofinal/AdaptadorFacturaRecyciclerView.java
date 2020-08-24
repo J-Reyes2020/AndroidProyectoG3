@@ -1,4 +1,4 @@
 package com.example.proyectofinal;
 
-public class AdaptadorFacturaRecyciclerView {
+public class AdaptadorFacturaRecyciclerView{
 }
