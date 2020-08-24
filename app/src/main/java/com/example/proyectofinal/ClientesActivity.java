@@ -77,7 +77,7 @@ public class ClientesActivity extends AppCompatActivity implements Response.List
         JSONObject jsonObject = null;
         try {
             System.out.println("la cantidad de registro " + json.length());
-            for (int i=0;i<json.length();i++){
+                for (int i=0;i<json.length();i++){
                 jsonObject = json.getJSONObject(i);
 
                 cliente = new Cliente();

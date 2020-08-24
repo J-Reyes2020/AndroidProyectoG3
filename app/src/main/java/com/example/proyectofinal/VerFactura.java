@@ -88,6 +88,8 @@ public class VerFactura extends AppCompatActivity implements Response.Listener<J
                 factura.setSubtotal(jsonObject.getDouble("subtotal"));
                 factura.setDescuento(jsonObject.getDouble("descuento"));
                 factura.setClienteId(jsonObject.getString("cliente_id"));
+                listaDatosFactura.add(factura);
+                System.out.println(factura.toString());
             }
                 AdaptadorFacturaRecycler adaptador = new AdaptadorFacturaRecycler(listaDatosFactura);
                 recyclerListaFactura.setAdapter(adaptador);
