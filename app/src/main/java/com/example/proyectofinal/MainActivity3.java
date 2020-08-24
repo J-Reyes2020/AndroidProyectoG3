@@ -14,7 +14,7 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
     }
 
-    public void VerFactura(View view) {
+    public void onClicVerFactura(View view) {
         Intent intent = new Intent(this.getApplicationContext(), VerFactura.class);
         startActivity(intent);
     }

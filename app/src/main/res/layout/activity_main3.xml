@@ -19,6 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_titulo3"
         android:text="Ver Factura"
-        android:onClick="VerFactura"
+        android:onClick="onClicVerFactura"
         />
 </RelativeLayout>
