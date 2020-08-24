@@ -30,7 +30,7 @@ public class Factura {
 
     @Override
     public String toString() {
-        return "Factura{" +
+        return "VerFactura{" +
                 "correlativoFactura='" + correlativoFactura + '\'' +
                 ", noFactura=" + noFactura +
                 ", serie=" + serie +

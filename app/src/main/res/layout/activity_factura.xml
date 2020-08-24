@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerFactura"
+    android:background="@color/negro">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_factura_recicler_viewr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_agregar_cliente"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_factura_rv_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="regresar"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
+        android:layout_marginTop="600sp"
+        android:layout_marginLeft="300sp"
+        />
+
+</RelativeLayout>
