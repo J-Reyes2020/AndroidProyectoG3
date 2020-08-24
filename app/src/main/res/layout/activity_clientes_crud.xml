@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ClientesCrudActivity"
+    android:background="@color/negro"
     >
     
 
@@ -18,6 +19,7 @@
         android:layout_marginRight="100sp"
         android:layout_marginLeft="100sp"
         android:layout_marginTop="200sp"
+        android:textColor="@color/blanco"
         />
     <Button
         android:id="@+id/btn_agregar_cliente_crud"
@@ -29,7 +31,10 @@
         android:layout_marginRight="249dp"
         android:onClick="onClickAgregarClienteCrud"
         android:text="Agregar"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_redondo"
+        />
     <Button
         android:id="@+id/btn_eliminar_cliente_crud"
         android:layout_width="match_parent"
@@ -40,6 +45,8 @@
         android:layout_marginLeft="250sp"
         android:layout_below="@+id/tv_tit"
         android:onClick="onclickEliminarClienteCrud"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_redondo"
         />
     <Button
         android:id="@+id/btn_actualizar_cliente_crud"
@@ -51,6 +58,8 @@
         android:layout_below="@+id/btn_eliminar_cliente_crud"
         android:layout_marginRight="250sp"
         android:onClick="onClickActualizarClienteCrud"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_redondo"
         />
 
 </RelativeLayout>
