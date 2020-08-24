@@ -36,8 +36,5 @@ public class ClientesCrudActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onclickBuscarClienteCrud(View view) {
-        Intent intent = new Intent(view.getContext(), BuscarCliente.class);
-        startActivity(intent);
-    }
+
 }

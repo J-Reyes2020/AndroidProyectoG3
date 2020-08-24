@@ -6,21 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".OfertasActivity"
     >
+
     <Button
         android:id="@+id/btn_regresar_ofertas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Regresar"
-        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="200sp"
+        android:layout_marginBottom="683dp"
         android:onClick="onClickRegresarDesdeOfertas"
-        />
+        android:text="Regresar"
+        android:textSize="15sp" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_ofertas_recycler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_regresar_ofertas"
-        android:layout_marginTop="2dp"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0sp"
+        android:layout_marginEnd="294dp"
+        android:layout_marginRight="294dp"
+        android:layout_marginBottom="396dp" />
 </RelativeLayout>

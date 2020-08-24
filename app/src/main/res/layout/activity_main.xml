@@ -48,7 +48,6 @@
         android:textSize="25sp"
         android:inputType="textPassword"
         />
-
     <Button
         android:id="@+id/btn_validar_datos"
         android:layout_width="match_parent"
@@ -63,5 +62,4 @@
         android:textColor="@color/blanco"
         android:background="@drawable/boton_redondo"
         />
-
 </RelativeLayout>

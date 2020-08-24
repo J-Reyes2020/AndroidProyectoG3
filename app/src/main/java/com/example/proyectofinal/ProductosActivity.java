@@ -6,7 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ProductosActivity extends AppCompatActivity {
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+
+import org.json.JSONObject;
+
+public class ProductosActivity extends AppCompatActivity implements Response.Listener<JSONObject>, Response.ErrorListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,5 +22,15 @@ public class ProductosActivity extends AppCompatActivity {
     public void onclickCancelarCompra(View view) {
         Intent intent = new Intent(view.getContext(), MainActivity22.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onErrorResponse(VolleyError error) {
+
+    }
+
+    @Override
+    public void onResponse(JSONObject response) {
+
     }
 }

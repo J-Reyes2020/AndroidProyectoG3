@@ -32,7 +32,6 @@ public class OfertasActivity extends AppCompatActivity implements Response.Liste
     JsonObjectRequest jsonObjectRequest;
     String direccionWeb=null;
 
-
     Conexion ip = new Conexion();
 
     ArrayList<Ofertas> listaOferta = new ArrayList<>();
@@ -61,7 +60,7 @@ public class OfertasActivity extends AppCompatActivity implements Response.Liste
 
     @Override
     public void onResponse(JSONObject response) {
-
+        cargarDatos();
     }
 
     public void cargarDatos(){

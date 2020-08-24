@@ -81,7 +81,7 @@ public class ClientesActivity extends AppCompatActivity implements Response.List
                 jsonObject = json.getJSONObject(i);
 
                 cliente = new Cliente();
-                cliente.setClienteId(jsonObject.optInt("cliente_id "));
+                cliente.setClienteId(jsonObject.optInt("cliente_id"));
                 cliente.setNombre(jsonObject.optString("nombre"));
                 cliente.setApellido(jsonObject.optString("apellido"));
                 cliente.setTelefono(jsonObject.optInt("telefono"));
