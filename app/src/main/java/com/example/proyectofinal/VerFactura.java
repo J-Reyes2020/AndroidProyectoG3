@@ -61,7 +61,7 @@ public class VerFactura extends AppCompatActivity implements Response.Listener<J
     }
 
     public void datosFactura(){
-        String url=ip.getIp()+"factura.php";
+        String url=ip.getIp()+"/factura.php";
 
         System.out.println("URL: "+url);
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
@@ -72,9 +72,9 @@ public class VerFactura extends AppCompatActivity implements Response.Listener<J
         Factura factura;
         JSONArray json = response.optJSONArray("factura");
         JSONObject jsonObject = null;
-            try {
-                for (int i=0;i<json.length();i++){
+        try {
                 System.out.println("la cantidad de registros " + json.length());
+                for (int i=0;i<json.length();i++){
                 jsonObject = json.getJSONObject(i);
 
                 factura = new Factura();
