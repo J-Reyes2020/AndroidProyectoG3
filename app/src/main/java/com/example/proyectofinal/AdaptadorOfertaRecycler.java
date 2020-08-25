@@ -17,8 +17,9 @@ public class AdaptadorOfertaRecycler extends RecyclerView.Adapter<AdaptadorOfert
 
     ArrayList<Ofertas> listaOfertas;
 
-    public AdaptadorOfertaRecycler(ArrayList<Productos> listaDatosP) {
 
+    public AdaptadorOfertaRecycler(ArrayList<Ofertas> listaOfertas) {
+        this.listaOfertas = listaOfertas;
     }
 
     @NonNull

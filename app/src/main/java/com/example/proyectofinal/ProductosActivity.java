@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -32,9 +33,9 @@ public class ProductosActivity extends AppCompatActivity implements Response.Lis
 
     String direccionUrle=null;
 
-    ArrayList<Productos> listaDatosP = new ArrayList<>();
+    ArrayList<Productos> listaProductos = new ArrayList<>();
 
-    RecyclerView recyclerProducto;
+    RecyclerView recyclerLista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +44,10 @@ public class ProductosActivity extends AppCompatActivity implements Response.Lis
 
         request = Volley.newRequestQueue(getApplicationContext());
 
-        recyclerProducto = (RecyclerView)findViewById(R.id.rv_listar_productos);
-        recyclerProducto.setLayoutManager(new LinearLayoutManager(this));
+        recyclerLista = (RecyclerView)findViewById(R.id.rv_listar_productos);
+        recyclerLista.setLayoutManager(new LinearLayoutManager(this));
+
+        datos();
 
     }
 
@@ -55,13 +58,14 @@ public class ProductosActivity extends AppCompatActivity implements Response.Lis
 
     @Override
     public void onErrorResponse(VolleyError error) {
+        Toast.makeText(this.getApplicationContext(), "NO hay ningun dato", Toast.LENGTH_SHORT).show();
         System.out.println("error: " + error.toString());
 
     }
 
     @Override
     public void onResponse(JSONObject response) {
-
+        cargarDatos(response);
     }
 
     public void datos(){
@@ -75,21 +79,22 @@ public class ProductosActivity extends AppCompatActivity implements Response.Lis
         JSONArray json = response.optJSONArray("productos");
         JSONObject jsonObject = null;
         try {
-            for (int i = 0; i < json.length(); i++) {
-                jsonObject = json.getJSONObject(i);
+            System.out.println("Los registros son: " + json.length());
+                for (int i=0;i<json.length();i++) {
+                    jsonObject = json.getJSONObject(i);
 
-                productos = new Productos();
-                productos.setProductoId(jsonObject.optInt("0"));
-                productos.setNombreProducto(jsonObject.optString("1"));
-                productos.setPrecioProducto(jsonObject.optInt("2"));
-                productos.setCantidadProducto(jsonObject.optInt("3"));
-                productos.setTipoProducto(jsonObject.optString("4"));
-                listaDatosP.add(productos);
-                System.out.println(productos.toString());
-            }
-            AdaptadorOfertaRecycler adap = new AdaptadorOfertaRecycler(listaDatosP);
-            recyclerProducto.setAdapter(adap);
-        }catch (JSONException e){
+                    productos = new Productos();
+                    productos.setProductoId(jsonObject.optInt("0"));
+                    productos.setNombreProducto(jsonObject.optString("1"));
+                    productos.setPrecioProducto(jsonObject.optInt("2"));
+                    productos.setCantidadProducto(jsonObject.optInt("3"));
+                    productos.setTipoProducto(jsonObject.optInt("4"));
+                    listaProductos.add(productos);
+                    System.out.println(productos.toString());
+                }
+                AdaptadorProductoRecycler adap = new AdaptadorProductoRecycler(listaProductos);
+                recyclerLista.setAdapter(adap);
+            }catch (JSONException e){
             e.printStackTrace();
         }
     }

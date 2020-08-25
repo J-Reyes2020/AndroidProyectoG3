@@ -35,7 +35,7 @@ public class AdaptadorProductoRecycler extends RecyclerView.Adapter<AdaptadorPro
         holder.tvNombrePro.setText(listaProductos.get(position).getNombreProducto());
         holder.tvPrecio.setText(String.valueOf(listaProductos.get(position).getPrecioProducto()));
         holder.tvCantidad.setText(String.valueOf(listaProductos.get(position).getCantidadProducto()));
-        holder.tvTipo.setText(listaProductos.get(position).getTipoProducto());
+        holder.tvTipo.setText(String.valueOf(listaProductos.get(position).getTipoProducto()));
     }
 
     @Override
@@ -58,7 +58,6 @@ public class AdaptadorProductoRecycler extends RecyclerView.Adapter<AdaptadorPro
             tvPrecio = (TextView) itemView.findViewById(R.id.tv_precio_procuto_item);
             tvCantidad = (TextView) itemView.findViewById(R.id.tv_cantidad_producto_item);
             tvTipo = (TextView) itemView.findViewById(R.id.tv_tipo_producto_item);
-            btnAgregar = (Button) itemView.findViewById(R.id.btn_agregar_al_carrito);
         }
     }
 }

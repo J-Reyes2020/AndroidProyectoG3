@@ -6,12 +6,12 @@ public class Productos {
     private String nombreProducto;
     private int precioProducto;
     private int cantidadProducto;
-    private String tipoProducto;
+    private int tipoProducto;
 
     public Productos() {
     }
 
-    public Productos(int productoId, String nombreProducto, int precioProducto, int cantidadProducto, String tipoProducto) {
+    public Productos(int productoId, String nombreProducto, int precioProducto, int cantidadProducto, int tipoProducto) {
         this.productoId = productoId;
         this.nombreProducto = nombreProducto;
         this.precioProducto = precioProducto;
@@ -62,11 +62,11 @@ public class Productos {
         this.cantidadProducto = cantidadProducto;
     }
 
-    public String getTipoProducto() {
+    public int getTipoProducto() {
         return tipoProducto;
     }
 
-    public void setTipoProducto(String tipoProducto) {
+    public void setTipoProducto(int tipoProducto) {
         this.tipoProducto = tipoProducto;
     }
 }

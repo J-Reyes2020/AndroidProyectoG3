@@ -73,14 +73,4 @@
         android:layout_below="@+id/tv_cantidad_producto_item"
         />
 
-    <Button
-        android:id="@+id/btn_agregar_al_carrito"
-        android:layout_width="161dp"
-        android:layout_height="38dp"
-        android:layout_below="@+id/tv_tipo_producto_item"
-        android:layout_marginLeft="245sp"
-        android:layout_marginTop="5sp"
-        android:gravity="center_horizontal"
-        android:text="Agregar a Compra"
-        android:textSize="12sp" />
 </RelativeLayout>
