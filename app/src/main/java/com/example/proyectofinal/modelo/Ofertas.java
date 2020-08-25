@@ -4,13 +4,13 @@ public class Ofertas {
 
     private int ofertaId;
     private String nombreOferta;
-    private int fechaInicioOferta;
-    private int fechaFinalOferta;
+    private String fechaInicioOferta;
+    private String fechaFinalOferta;
 
     public Ofertas() {
     }
 
-    public Ofertas(int ofertaId, String nombreOferta, int fechaInicioOferta, int fechaFinalOferta) {
+    public Ofertas(int ofertaId, String nombreOferta, String fechaInicioOferta, String fechaFinalOferta) {
         this.ofertaId = ofertaId;
         this.nombreOferta = nombreOferta;
         this.fechaInicioOferta = fechaInicioOferta;
@@ -43,19 +43,19 @@ public class Ofertas {
         this.nombreOferta = nombreOferta;
     }
 
-    public int getFechaInicioOferta() {
+    public String getFechaInicioOferta() {
         return fechaInicioOferta;
     }
 
-    public void setFechaInicioOferta(int fechaInicioOferta) {
+    public void setFechaInicioOferta(String fechaInicioOferta) {
         this.fechaInicioOferta = fechaInicioOferta;
     }
 
-    public int getFechaFinalOferta() {
+    public String getFechaFinalOferta() {
         return fechaFinalOferta;
     }
 
-    public void setFechaFinalOferta(int fechaFinalOferta) {
+    public void setFechaFinalOferta(String fechaFinalOferta) {
         this.fechaFinalOferta = fechaFinalOferta;
     }
 }

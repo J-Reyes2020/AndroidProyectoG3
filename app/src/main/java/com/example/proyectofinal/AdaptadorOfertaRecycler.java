@@ -32,13 +32,14 @@ public class AdaptadorOfertaRecycler extends RecyclerView.Adapter<AdaptadorOfert
     public void onBindViewHolder(@NonNull AdaptadorOfertaRecycler.ViewHolderDatos holder, int position) {
         holder.tvCodigoOferta.setText(String.valueOf(listaOfertas.get(position).getOfertaId()));
         holder.tvNombreOferta.setText(listaOfertas.get(position).getNombreOferta());
-        holder.tvFechaInicio.setText(String.valueOf(listaOfertas.get(position).getFechaInicioOferta()));
-        holder.tvFechaFinal.setText(String.valueOf(listaOfertas.get(position).getFechaFinalOferta()));
+        holder.tvFechaInicio.setText(listaOfertas.get(position).getFechaInicioOferta());
+        holder.tvFechaFinal.setText(listaOfertas.get(position).getFechaFinalOferta());
 
     }
 
     @Override
     public int getItemCount() {
+        //tamaño
         return listaOfertas.size();
     }
 
@@ -54,6 +55,8 @@ public class AdaptadorOfertaRecycler extends RecyclerView.Adapter<AdaptadorOfert
             tvNombreOferta=(TextView) itemView.findViewById(R.id.tv_nombre_item_oferta);
             tvFechaInicio=(TextView) itemView.findViewById(R.id.tv_item_fecha_inicio_oferta);
             tvFechaFinal=(TextView) itemView.findViewById(R.id.tv_fecha_final_oferta_item);
+
+
         }
     }
 }

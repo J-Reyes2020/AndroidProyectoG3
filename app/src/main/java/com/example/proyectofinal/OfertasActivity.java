@@ -56,17 +56,19 @@ public class OfertasActivity extends AppCompatActivity implements Response.Liste
     public void onErrorResponse(VolleyError error) {
         Toast.makeText(this.getApplicationContext(),"Error", Toast.LENGTH_SHORT).show();
         System.out.println("Error al conectar:" + error.toString());
+
     }
 
     @Override
     public void onResponse(JSONObject response) {
-        cargarDatos();
+        //llamar al metodo que cargara la información
+        cargarOfertas(response);
     }
 
     public void cargarDatos(){
-        String url= ip+"/listaOfertas.php";
+        String url= ip.getIp()+"/listaOfertas.php";
 
-        System.out.println("URL: " + url);
+        System.out.println("MI URL: " + url);
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
         request.add(jsonObjectRequest);
     }
@@ -75,20 +77,24 @@ public class OfertasActivity extends AppCompatActivity implements Response.Liste
 
         JSONArray json = response.optJSONArray("ofertas");
         JSONObject jsonObject = null;
-
+        int contarx=0;
         try {
             System.out.println("cantidad de registro: " + json.length());
             for (int i=0;i<json.length();i++) {
                 //recorriendo cada uno de los elemento del array
                 jsonObject = json.getJSONObject(i);
-
                 ofertas = new Ofertas();
-                ofertas.setOfertaId(jsonObject.optInt("oferta_id "));
-                ofertas.setNombreOferta(jsonObject.optString("nombre"));
-                ofertas.setFechaInicioOferta(jsonObject.optInt("fecha_inicio"));
-                ofertas.setFechaFinalOferta(jsonObject.optInt("fecha_fin"));
+
+                //System.out.println("columna 0: " + jsonObject.optInt("0"));
+
+                ofertas.setOfertaId(jsonObject.optInt("0"));
+                ofertas.setNombreOferta(jsonObject.optString("1"));
+                ofertas.setFechaInicioOferta(jsonObject.optString("2"));
+                ofertas.setFechaFinalOferta(jsonObject.optString("3"));
                 listaOferta.add(ofertas);
-                System.out.println(ofertas.toString());
+                contarx++;
+                //System.out.println("contar: " + contarx);
+                System.out.println("Datos Generados: " + ofertas.toString());
             }
             AdaptadorOfertaRecycler adap =new AdaptadorOfertaRecycler(listaOferta);
             recyclerOfertas.setAdapter(adap);
