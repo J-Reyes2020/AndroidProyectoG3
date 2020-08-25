@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.proyectofinal.modelo.Ofertas;
+import com.example.proyectofinal.modelo.Productos;
 
 import java.util.ArrayList;
 
@@ -16,8 +17,8 @@ public class AdaptadorOfertaRecycler extends RecyclerView.Adapter<AdaptadorOfert
 
     ArrayList<Ofertas> listaOfertas;
 
-    public AdaptadorOfertaRecycler(ArrayList<Ofertas> listaOfertas) {
-        this.listaOfertas = listaOfertas;
+    public AdaptadorOfertaRecycler(ArrayList<Productos> listaDatosP) {
+
     }
 
     @NonNull
