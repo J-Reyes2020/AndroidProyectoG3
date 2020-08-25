@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="10sp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/boton_redondo"
         android:onClick="onclickModificar"
         android:text="Modificar"
@@ -40,9 +40,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_cliente_recycler"
-        android:layout_width="226dp"
-        android:layout_height="632dp"
+        android:layout_width="match_parent"
+        android:layout_height="626dp"
         android:layout_above="@+id/btn_salir_cliente"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp" />
+        android:layout_marginBottom="17dp" />
 </RelativeLayout>

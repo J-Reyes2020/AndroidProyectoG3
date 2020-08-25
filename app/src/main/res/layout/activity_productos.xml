@@ -26,16 +26,15 @@
         android:layout_marginRight="200sp"
         android:onClick="onclickCancelarCompra"
         android:text="cancelar Compra"
-        android:textSize="15sp" />
-
-    <ListView
-        android:id="@+id/lv_lista_productos"
+        android:textSize="15sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_listar_productos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="626dp"
+        android:layout_above="@+id/btn_salir_cliente"
+        android:layout_marginBottom="17dp"
         android:layout_below="@+id/btn_cancelar_compra"
-        >
-
-
-    </ListView>
+        />
 
 </RelativeLayout>
