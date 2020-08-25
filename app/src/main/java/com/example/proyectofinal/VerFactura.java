@@ -100,7 +100,7 @@ public class VerFactura extends AppCompatActivity implements Response.Listener<J
 
 
     public void onClickRegresarDesdeFactura(View view) {
-        Intent intent= new Intent(view.getContext(), MainActivity3.class);
+        Intent intent= new Intent(this.getApplicationContext(), MainActivity3.class);
         startActivity(intent);
     }
 }
