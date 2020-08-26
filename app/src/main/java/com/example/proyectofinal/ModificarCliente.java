@@ -2,6 +2,7 @@ package com.example.proyectofinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -75,5 +76,10 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
         actualizarDatos();
         Toast.makeText(this, "Actualizado", Toast.LENGTH_SHORT).show();
         System.out.println("error: " + url);
+    }
+
+    public void onClickRegresarModificar(View view) {
+        Intent intent = new Intent(this.getApplicationContext(),ClientesCrudActivity.class);
+        startActivity(intent);
     }
 }
