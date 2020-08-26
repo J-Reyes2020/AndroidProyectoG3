@@ -63,7 +63,7 @@ public class EliminarCliente extends AppCompatActivity implements Response.Liste
     }
 
     public void onClickEliminarCliente(View view) {
-        url=ip.getIp()+"eliminarCliente.php?txt_id"+idCliente.getText().toString();
+        url=ip.getIp()+"/eliminarCliente.php?txt_id="+idCliente.getText().toString();
         Toast.makeText(this, url,Toast.LENGTH_SHORT).show();
         System.out.println("Eliminar: " + url);
         url = url.replace(" ", "%20");
