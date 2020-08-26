@@ -63,8 +63,14 @@ public class InsertarCliente extends AppCompatActivity implements Response.Liste
         System.out.println(cliente.toString());
         if (cliente.getClienteId()==0){
             Toast.makeText(this.getApplicationContext(), "Error, Datos ya almacenados", Toast.LENGTH_SHORT).show();
+            idCliente.setText("");
+            etNombre.setText("");
+            etApellido.setText("");
+            etTelefono.setText("");
+            etDireccion.setText("");
+            etCorreo.setText("");
         }else {
-            Toast.makeText(this.getApplicationContext(), "Datos almacemnados con éxito:", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this.getApplicationContext(), "Datos almacemnados con éxito:", Toast.LENGTH_LONG).show();
             idCliente.setText("");
             etNombre.setText("");
             etApellido.setText("");
