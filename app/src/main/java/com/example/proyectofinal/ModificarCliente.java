@@ -36,7 +36,6 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_cliente);
-
         enlazarControl();
     }
 
