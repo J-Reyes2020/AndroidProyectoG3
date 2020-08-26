@@ -12,13 +12,17 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.example.proyectofinal.modelo.Cliente;
 import com.example.proyectofinal.modelo.Conexion;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 public class EliminarCliente extends AppCompatActivity implements Response.Listener<JSONObject>, Response.ErrorListener{
 
-    EditText etClienteId;
+    EditText idCliente;
+
     Conexion ip = new Conexion();
     String url;
     RequestQueue request;
@@ -39,21 +43,47 @@ public class EliminarCliente extends AppCompatActivity implements Response.Liste
 
     @Override
     public void onResponse(JSONObject response) {
-        Toast.makeText(this, "Registro eliminado", Toast.LENGTH_SHORT).show();
+        Cliente cliente = new Cliente();
 
+        cliente=eliminarCliente(response);
+        System.out.println(cliente.toString());
+        if (cliente.getClienteId()==0){
+            Toast.makeText(this.getApplicationContext(), "Error, NO se encuentra la informacion o" +
+                    "ya fue eliminada", Toast.LENGTH_SHORT).show();
+            idCliente.setText("");
+        }else {
+            Toast.makeText(this.getApplicationContext(), "Datos eliminado con éxito:", Toast.LENGTH_LONG).show();
+            idCliente.setText("");
+        }
     }
 
+
     public void enlazarControl(){
-        etClienteId = (EditText) findViewById(R.id.et_id_client);
+        idCliente = (EditText) findViewById(R.id.et_id_client);
     }
 
     public void onClickEliminarCliente(View view) {
-        url=ip.getIp()+"eliminarCliente.php?txt_id"+etClienteId.getText().toString();
+        url=ip.getIp()+"eliminarCliente.php?txt_id"+idCliente.getText().toString();
         Toast.makeText(this, url,Toast.LENGTH_SHORT).show();
         System.out.println("Eliminar: " + url);
         url = url.replace(" ", "%20");
 
         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
         request.add(jsonObjectRequest);
+    }
+
+    public Cliente eliminarCliente(JSONObject response) {
+        Cliente cliente = new Cliente();
+        JSONArray json = response.optJSONArray("cliente_id");
+        JSONObject jsonObject;
+        try {
+            jsonObject = json.getJSONObject(0);
+            cliente.setClienteId(jsonObject.optInt("cliente_id"));
+
+        } catch (JSONException e) {
+            System.out.println(e);
+            Toast.makeText(this.getApplicationContext(), "Datos Erroneos " + e, Toast.LENGTH_LONG).show();
+        }
+        return cliente;
     }
 }
