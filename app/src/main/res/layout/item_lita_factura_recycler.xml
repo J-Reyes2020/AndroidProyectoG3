@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="Correlativo Detalle"
-        android:gravity="center_horizontal"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
@@ -19,7 +19,7 @@
         android:id="@+id/tv_item_factura_no_factura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
@@ -31,7 +31,7 @@
         android:id="@+id/tv_item_factura_serie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
@@ -43,7 +43,7 @@
         android:id="@+id/tv_item_factura_fecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
@@ -55,7 +55,7 @@
         android:id="@+id/tv_item_factura_nit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
@@ -67,7 +67,7 @@
         android:id="@+id/tv_item_factura_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
@@ -85,7 +85,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        android:gravity="center"
+
         />
     <TextView
         android:id="@+id/tv_item_factura_sub_total"
@@ -97,7 +97,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        android:gravity="center"
+
         />
     <TextView
         android:id="@+id/tv_item_factura_descuento"
@@ -109,7 +109,7 @@
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        android:gravity="center"
+
         />
     <TextView
         android:id="@+id/tv_item_factura_cliente_id"
@@ -121,6 +121,18 @@
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/tv_item_blanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+
         />
 </LinearLayout>
