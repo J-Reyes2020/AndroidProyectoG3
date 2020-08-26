@@ -61,11 +61,11 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
 
     private void actualizarDatos(){
         String url = ip.getIp()+"/modificarCliente.php?txt_cliente_id_modificar="+etClienteId.getText().toString()
-                +"txt_nombre_modificar="+etNombreCliente.getText().toString()
-                +"txt_apellido_modificar="+etApellidoCliente.getText().toString()
-                +"txt_telefono_modificar="+etTelefonoCliente.getText().toString()
-                +"txt_direcciom_modificar="+etDireccionCliente.getText().toString()
-                +"txt_correo_modificar="+etCorreoEle.getText().toString();
+                +"&txt_nombre_modificar="+etNombreCliente.getText().toString()
+                +"&txt_apellido_modificar="+etApellidoCliente.getText().toString()
+                +"&txt_telefono_modificar="+etTelefonoCliente.getText().toString()
+                +"&txt_direcciom_modificar="+etDireccionCliente.getText().toString()
+                +"&txt_correo_modificar="+etCorreoEle.getText().toString();
 
         url=url.replace(" ", "%20");
         jsonObjectRequest= new JsonObjectRequest(Request.Method.GET, url, null, this, this);
