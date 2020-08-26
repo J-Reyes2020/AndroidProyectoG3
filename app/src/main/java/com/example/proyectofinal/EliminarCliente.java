@@ -53,7 +53,7 @@ public class EliminarCliente extends AppCompatActivity implements Response.Liste
             idCliente.setText("");
         }else {
             Toast.makeText(this.getApplicationContext(), "Datos eliminado con éxito:", Toast.LENGTH_LONG).show();
-            idCliente.setText("");
+            idCliente.setText(" ");
         }
     }
 
