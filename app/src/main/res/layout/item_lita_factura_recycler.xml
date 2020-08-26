@@ -1,137 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/negro"
-    >
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_factura_correlativo_factura"
+        android:id="@+id/tv_item_factura_correlativo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Correlativo Factura"
         android:textSize="20sp"
-        android:textColor="@color/blanco"
-        android:gravity="center"
+        android:text="Correlativo Detalle"
+        android:gravity="center_horizontal"
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        />
 
+        />
     <TextView
-        android:id="@+id/tv_factura_no_factura"
+        android:id="@+id/tv_item_factura_no_factura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No Facura"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
+        android:gravity="center_horizontal"
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        android:gravity="center"
-        />
+        android:text="No Factura"
+        android:textSize="20sp"
 
+        />
     <TextView
-        android:id="@+id/tv_factura_serie"
+        android:id="@+id/tv_item_factura_serie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
         android:text="Serie"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/tv_item_factura_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
-        android:gravity="center"
-        />
-
-    <TextView
-        android:id="@+id/tv_factura_fecha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Fecha"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-        android:gravity="center"
-        />
-    <TextView
-        android:id="@+id/tv_factura_nit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="NIT"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-        android:gravity="center"
-        />
+        android:textSize="20sp"
 
+        />
     <TextView
-        android:id="@+id/tv_factura_nombre"
+        android:id="@+id/tv_item_factura_nit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
+        android:text="Nit"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/tv_item_factura_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="95sp"
+        android:layout_marginRight="95sp"
         android:text="Nombre"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-        android:gravity="center"
-        />
+        android:textSize="20sp"
 
+        />
     <TextView
-        android:id="@+id/tv_factura_direccion"
+        android:id="@+id/tv_item_factura_direccion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dirección"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
+        android:text="Direccion"
+        android:textSize="20sp"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
         android:gravity="center"
         />
-
     <TextView
-        android:id="@+id/tv_factura_Subtotal"
+        android:id="@+id/tv_item_factura_sub_total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subtotal"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
+        android:text="Sub Total"
+        android:textSize="20sp"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
         android:gravity="center"
         />
-
     <TextView
-        android:id="@+id/tv_factura_descuento"
+        android:id="@+id/tv_item_factura_descuento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Descuento"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
+        android:textSize="20sp"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
         android:gravity="center"
         />
-
     <TextView
-        android:id="@+id/tv_factura_cliente_id"
+        android:id="@+id/tv_item_factura_cliente_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cliente ID"
         android:textSize="15sp"
-        android:textColor="@color/blanco"
+
         android:layout_marginTop="5sp"
         android:layout_marginLeft="95sp"
         android:layout_marginRight="95sp"
         android:gravity="center"
         />
-
 </LinearLayout>

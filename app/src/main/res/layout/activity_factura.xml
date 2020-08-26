@@ -4,28 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerFactura"
-    android:background="@color/negro">
+    tools:context=".FacturaActivity">
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_factura_recicler_viewr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_agregar_cliente"
-        android:layout_marginTop="2dp"
+        android:id="@+id/rv_factura_recycler"
+        android:layout_width="300sp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="17dp"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_above="@id/btn_salir_factura"/>
 
     <Button
-        android:id="@+id/btn_factura_rv_regresar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_salir_factura"
+        android:layout_width="166dp"
         android:layout_height="wrap_content"
-        android:text="regresar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/boton_redondo"
-        android:textColor="@color/blanco"
-        android:layout_marginTop="600sp"
-        android:layout_marginLeft="300sp"
-        android:onClick="onClickRegresarDesdeFactura"
-        />
+        android:onClick="onclikSalirFactura"
+        android:text="Salir"
+        android:textColor="@color/negro"
+        android:textSize="20sp" />
 
 </RelativeLayout>

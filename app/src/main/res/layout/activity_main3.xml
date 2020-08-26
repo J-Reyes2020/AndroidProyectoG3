@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity3"
+    android:background="@color/negro">
 
     <TextView
         android:id="@+id/tv_titulo3"
@@ -12,13 +13,23 @@
         android:layout_height="wrap_content"
        android:text="Ejemplo"
         android:textSize="20sp"
+        android:textColor="@color/blanco"
         />
     <Button
         android:id="@+id/btn_ver_factura"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_titulo3"
-        android:text="Ver Factura"
-        android:onClick="onClicVerFactura"
+        android:text="Factura"
+        android:layout_marginTop="600sp"
+        android:onClick="onClicFactura"
+        android:layout_marginLeft="40sp"/>
+    <Button
+        android:id="@+id/btn_factura_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_marginLeft="290sp"
+        android:layout_marginTop="600sp"
+        android:onClick="onClicSalirFactura"
         />
 </RelativeLayout>

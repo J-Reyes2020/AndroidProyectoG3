@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.proyectofinal.modelo.Factura;
+
 public class MainActivity3 extends AppCompatActivity {
 
     @Override
@@ -15,8 +17,14 @@ public class MainActivity3 extends AppCompatActivity {
 
     }
 
-    public void onClicVerFactura(View view) {
-        Intent intent= new Intent(this.getApplicationContext(), VerFactura.class);
+
+    public void onClicFactura(View view) {
+        Intent intent = new Intent(view.getContext(), FacturaActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClicSalirFactura(View view) {
+        Intent intent = new Intent(view.getContext(), MainActivity.class);
         startActivity(intent);
     }
 }
