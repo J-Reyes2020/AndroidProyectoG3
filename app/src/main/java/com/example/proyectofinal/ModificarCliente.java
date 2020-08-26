@@ -60,13 +60,8 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
         Toast.makeText(this, "Datos Actualizados Correctamente", Toast.LENGTH_SHORT).show();
     }
 
-    public void onClickMoficarCliente(View view) {
-        actualizarDato();
-        Toast.makeText(this,"Click en Actualziar:", Toast.LENGTH_SHORT).show();
-        System.out.println(url);
-    }
-    private void actualizarDato(){
-        String url = ip.getIp() +"modificarcliente.php?txt_cliente_id="+etCorreoEle.getText().toString()
+    private void actualizarDatos(){
+        String url = ip.getIp()+"/modificarCliente.php?txt_cliente_id_modificar="+etClienteId.getText().toString()
                 +"txt_nombre_modificar="+etNombreCliente.getText().toString()
                 +"txt_apellido_modificar="+etApellidoCliente.getText().toString()
                 +"txt_telefono_modificar="+etTelefonoCliente.getText().toString()
@@ -76,5 +71,10 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
         url=url.replace(" ", "%20");
         jsonObjectRequest= new JsonObjectRequest(Request.Method.GET, url, null, this, this);
         request.add(jsonObjectRequest);
+    }
+    public void onClickMoficarClienteS(View view) {
+        actualizarDatos();
+        Toast.makeText(this, "Actualizado", Toast.LENGTH_SHORT).show();
+        System.out.println("error: " + url);
     }
 }

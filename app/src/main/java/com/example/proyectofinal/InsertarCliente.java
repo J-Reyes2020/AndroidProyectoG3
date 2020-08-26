@@ -44,31 +44,15 @@ public class InsertarCliente extends AppCompatActivity implements Response.Liste
         request = Volley.newRequestQueue(getApplicationContext());
     }
 
-    public void onClikInsertarCliente(View view) {
-         String url = ip.getIp()+"/insertarCliente.php?txt_cliente_id"+idCliente.getText().toString()
-                 +"$txt_nombre="+etNombre.toString()
-                 +"$txt_apellido="+etApellido.toString()
-                 +"$txt_telefono="+etTelefono.toString()
-                 +"$txt_direccion="+etDireccion.toString()
-                 +"$txt_correo="+etCorreo.toString();
-
-         url=url.replace(" ","20%");
-
-         System.out.println(url);
-
-         jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
-         request.add(jsonObjectRequest);
-    }
-
     @Override
     public void onErrorResponse(VolleyError error) {
-        Toast.makeText(this.getApplicationContext(), "Error al almacenar:" + error.toString(), Toast.LENGTH_SHORT);
+        Toast.makeText(this.getApplicationContext(), "Error al almacenar:" + error.toString(), Toast.LENGTH_LONG).show();
         System.out.println("Error al almacenar:" + error.toString());
     }
 
     @Override
     public void onResponse(JSONObject response) {
-        Toast.makeText(this.getApplicationContext(), "Datos almacemnados con éxito:" + response.toString(), Toast.LENGTH_SHORT);
+        Toast.makeText(this.getApplicationContext(), "Datos almacemnados con éxito:" + response.toString(), Toast.LENGTH_SHORT).show();
     }
 
     public void enlazarControles(){
@@ -84,4 +68,21 @@ public class InsertarCliente extends AppCompatActivity implements Response.Liste
         Intent intent = new Intent(getApplicationContext(),ClientesCrudActivity.class);
         startActivity(intent);
     }
+
+    public void onClikInsertarCliente(View view) {
+        String url = ip.getIp()+"/insertarCliente.php?txt_cliente_id"+idCliente.getText().toString()
+                +"$txt_nombre="+etNombre.toString()
+                +"$txt_apellido="+etApellido.toString()
+                +"$txt_telefono="+etTelefono.toString()
+                +"$txt_direccion="+etDireccion.toString()
+                +"$txt_correo="+etCorreo.toString();
+
+        url=url.replace(" ","20%");
+
+        System.out.println("error" + url);
+
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
+        request.add(jsonObjectRequest);
+    }
+
 }

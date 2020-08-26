@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InsertarCliente">
-
+    tools:context=".InsertarCliente"
+    android:background="@color/negro"
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,8 +23,9 @@
                 android:layout_marginTop="100sp"
                 android:gravity="center_horizontal"
                 android:text="Agregar Cliente"
-                android:textSize="25sp" />
-
+                android:textSize="25sp"
+                android:textColor="@color/blanco"
+                />
             <EditText
                 android:id="@+id/et_id_cliente_insertar"
                 android:layout_width="match_parent"
@@ -35,8 +37,9 @@
                 android:gravity="center_horizontal"
                 android:hint="Código"
                 android:textSize="20sp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/blanco"
                 />
-
             <EditText
                 android:id="@+id/et_nombre_cliente_insertar"
                 android:layout_width="match_parent"
@@ -48,8 +51,9 @@
                 android:gravity="center_horizontal"
                 android:hint="Nombre"
                 android:textSize="20sp"
+                android:textColorHint="@color/blanco"
+                android:textColor="@color/blanco"
                 />
-
             <EditText
                 android:id="@+id/et_apellido_cliente_insertar"
                 android:layout_width="match_parent"
@@ -61,8 +65,9 @@
                 android:gravity="center_horizontal"
                 android:hint="Apellido"
                 android:textSize="20sp"
+                android:textColorHint="@color/blanco"
+                android:textColor="@color/blanco"
                 />
-
             <EditText
                 android:id="@+id/et_telefono_cliente_insertar"
                 android:layout_width="match_parent"
@@ -74,8 +79,9 @@
                 android:gravity="center_horizontal"
                 android:hint="Teléfono"
                 android:textSize="20sp"
+                android:textColor="@color/blanco"
+                android:textColorHint="@color/blanco"
                 />
-
             <EditText
                 android:id="@+id/et_direccion_cliente_insertar"
                 android:layout_width="match_parent"
@@ -87,8 +93,9 @@
                 android:gravity="center_horizontal"
                 android:hint="Dirección"
                 android:textSize="20sp"
+                android:textColorHint="@color/blanco"
+                android:textColor="@color/blanco"
                 />
-
             <EditText
                 android:id="@+id/et_correp_cliente_insertar"
                 android:layout_width="match_parent"
@@ -100,8 +107,9 @@
                 android:gravity="center_horizontal"
                 android:hint="E-mail"
                 android:textSize="20sp"
+                android:textColorHint="@color/blanco"
+                android:textColor="@color/blanco"
                 />
-
             <Button
                 android:id="@+id/btn_insertar_cliente_insertar"
                 android:layout_width="match_parent"
@@ -114,8 +122,8 @@
                 android:text="Guardar"
                 android:textSize="20sp"
                 android:background="@drawable/boton_redondo"
-                android:textColor="@color/blanco"/>
-
+                android:textColor="@color/blanco"
+                />
             <Button
                 android:id="@+id/btn_regresar_insertar_cliente_insertar"
                 android:layout_width="match_parent"
@@ -130,12 +138,6 @@
                 android:textColor="@color/blanco"
                 android:inputType="textNoSuggestions"
                 android:onClick="onClickInsertarClienteRegresar"/>
-
         </LinearLayout>
-
-
-
     </ScrollView>
-
-
 </RelativeLayout>
