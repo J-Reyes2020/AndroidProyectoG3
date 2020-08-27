@@ -20,6 +20,7 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline45"
         app:layout_constraintEnd_toStartOf="@+id/guideline42"
+        app:layout_constraintStart_toStartOf="@+id/guideline58"
         app:layout_constraintTop_toTopOf="@+id/guideline44" />
 
     <Button
@@ -33,6 +34,7 @@
         android:textColor="@color/blanco"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline45"
+        app:layout_constraintEnd_toStartOf="@+id/guideline58"
         app:layout_constraintStart_toStartOf="@+id/guideline20"
         app:layout_constraintTop_toTopOf="@+id/guideline44" />
 
@@ -79,5 +81,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="697dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="196dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
