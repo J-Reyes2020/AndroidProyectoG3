@@ -32,7 +32,7 @@
         />
 
     <Button
-        android:id="@+id/btn_eliminar_cliente_"
+        android:id="@+id/btn_eliminar_cliente_eliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -53,7 +53,7 @@
         android:textSize="20sp"
         android:text="Regresar"
         android:gravity="center_horizontal"
-        android:layout_below="@+id/btn_eliminar_cliente_"
+        android:layout_below="@+id/btn_eliminar_cliente_eliminar"
         android:layout_marginTop="20sp"
         android:layout_marginRight="95sp"
         android:layout_marginLeft="95sp"

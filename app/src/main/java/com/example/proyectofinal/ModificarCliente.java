@@ -2,7 +2,6 @@ package com.example.proyectofinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -13,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.proyectofinal.modelo.Conexion;
 
 import org.json.JSONObject;
@@ -38,6 +38,8 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_cliente);
         enlazarControl();
+
+        request = Volley.newRequestQueue(getApplicationContext());
     }
 
     private void enlazarControl(){
@@ -62,11 +64,11 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
 
     private void actualizarDatos(){
         String url = ip.getIp()+"/modificarCliente.php?txt_cliente_id_modificar="+etClienteId.getText().toString()
-                +"txt_nombre_modificar="+etNombreCliente.getText().toString()
-                +"txt_apellido_modificar="+etApellidoCliente.getText().toString()
-                +"txt_telefono_modificar="+etTelefonoCliente.getText().toString()
-                +"txt_direcciom_modificar="+etDireccionCliente.getText().toString()
-                +"txt_correo_modificar="+etCorreoEle.getText().toString();
+                +"&txt_nombre_modificar="+etNombreCliente.getText().toString()
+                +"&txt_apellido_modificar="+etApellidoCliente.getText().toString()
+                +"&txt_telefono_modificar="+etTelefonoCliente.getText().toString()
+                +"&txt_direcciom_modificar="+etDireccionCliente.getText().toString()
+                +"&txt_correo_modificar="+etCorreoEle.getText().toString();
 
         url=url.replace(" ", "%20");
         jsonObjectRequest= new JsonObjectRequest(Request.Method.GET, url, null, this, this);
@@ -74,12 +76,8 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
     }
     public void onClickMoficarClienteS(View view) {
         actualizarDatos();
-        Toast.makeText(this, "Actualizado", Toast.LENGTH_SHORT).show();
-        System.out.println("error: " + url);
+        /*Toast.makeText(this, "Actualizado", Toast.LENGTH_SHORT).show();
+        System.out.println("error: " + url);*/
     }
 
-    public void onClickRegresarModificar(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),ClientesCrudActivity.class);
-        startActivity(intent);
-    }
 }
