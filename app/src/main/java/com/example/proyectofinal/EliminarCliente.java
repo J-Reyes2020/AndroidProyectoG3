@@ -51,13 +51,8 @@ public class EliminarCliente extends AppCompatActivity implements Response.Liste
 
         cliente=eliminarCliente(response);
         System.out.println(cliente.toString());
-        if (cliente.getNombre().equals("Eliminado")){
+        if (cliente.getClienteId()==0){
             Toast.makeText(this.getApplicationContext(), "Datos eliminado con éxito:", Toast.LENGTH_SHORT).show();
-            idCliente.setText("");
-        }
-        if (cliente.getNombre().equals("no localizado")){
-            Toast.makeText(this.getApplicationContext(), "Error, NO se encuentra la informacion o" +
-                    "ya fue eliminada" , Toast.LENGTH_LONG).show();
             idCliente.setText("");
         }
     }

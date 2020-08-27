@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.proyectofinal.modelo.Conexion;
 
 import org.json.JSONObject;
@@ -37,6 +38,8 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_cliente);
         enlazarControl();
+
+        request = Volley.newRequestQueue(getApplicationContext());
     }
 
     private void enlazarControl(){
@@ -73,7 +76,8 @@ public class ModificarCliente extends AppCompatActivity implements Response.List
     }
     public void onClickMoficarClienteS(View view) {
         actualizarDatos();
-        Toast.makeText(this, "Actualizado", Toast.LENGTH_SHORT).show();
-        System.out.println("error: " + url);
+        /*Toast.makeText(this, "Actualizado", Toast.LENGTH_SHORT).show();
+        System.out.println("error: " + url);*/
     }
+
 }
