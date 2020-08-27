@@ -1,138 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tv_item_factura_correlativo"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginTop="4dp"
         android:text="Correlativo Detalle"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline83"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline82" />
 
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-
-        />
     <TextView
         android:id="@+id/tv_item_factura_no_factura"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
         android:text="No Factura"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline84"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline83" />
 
-        />
     <TextView
         android:id="@+id/tv_item_factura_serie"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
         android:text="Serie"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline85"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline84" />
 
-        />
     <TextView
         android:id="@+id/tv_item_factura_fecha"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
         android:text="Fecha"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline86"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline85" />
 
-        />
     <TextView
         android:id="@+id/tv_item_factura_nit"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
         android:text="Nit"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline87"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline86" />
 
-        />
     <TextView
         android:id="@+id/tv_item_factura_nombre"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
         android:text="Nombre"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline88"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline87" />
 
-        />
     <TextView
         android:id="@+id/tv_item_factura_direccion"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Direccion"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline89"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline88" />
 
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-
-        />
     <TextView
         android:id="@+id/tv_item_factura_sub_total"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sub Total"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline90"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline89" />
 
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-
-        />
     <TextView
         android:id="@+id/tv_item_factura_descuento"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descuento"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline91"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline90" />
 
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-
-        />
     <TextView
         android:id="@+id/tv_item_factura_cliente_id"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cliente ID"
-        android:textSize="15sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline92"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline91" />
 
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
-
-        />
     <TextView
         android:id="@+id/tv_item_blanco"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="15sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline93"
+        app:layout_constraintStart_toStartOf="@+id/guideline81"
+        app:layout_constraintTop_toTopOf="@+id/guideline92" />
 
-        android:layout_marginTop="5sp"
-        android:layout_marginLeft="95sp"
-        android:layout_marginRight="95sp"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="5dp" />
 
-        />
-</LinearLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-7dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="33dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="64dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="90dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="122dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="155dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="186dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="218dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="251dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="281dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="305dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="329dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
