@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EliminarCliente">
+    tools:context=".EliminarCliente"
+    android:background="@color/negro">
 
     <TextView
         android:id="@+id/tv_titulo_clientes_crud"
@@ -14,6 +15,7 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="250sp"
         android:textSize="25sp"
+        android:textColor="@color/blanco"
         />
     <EditText
         android:id="@+id/et_id_client"
@@ -23,6 +25,7 @@
         android:layout_below="@+id/tv_titulo_clientes_crud"
         android:textSize="20sp"
         android:hint="Código"
+        android:textColorHint="@color/gris"
         android:gravity="center_horizontal"
         android:layout_marginRight="60sp"
         android:layout_marginLeft="60sp"
@@ -40,6 +43,8 @@
         android:layout_marginRight="80sp"
         android:layout_marginLeft="80sp"
         android:onClick="onClickEliminarCliente"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
         />
     <Button
         android:id="@+id/btn_regresar_eliminar_cliente_"
@@ -52,6 +57,8 @@
         android:layout_marginTop="20sp"
         android:layout_marginRight="95sp"
         android:layout_marginLeft="95sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
         />
 
 </RelativeLayout>
