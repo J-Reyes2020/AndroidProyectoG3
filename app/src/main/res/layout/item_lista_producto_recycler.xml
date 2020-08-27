@@ -1,76 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro">
 
-    <TextView
-        android:id="@+id/titulo_productos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="Productos"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10sp"
-        />
     <TextView
         android:id="@+id/tv_producto_id_item"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Código Producto"
-        android:textSize="20sp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_marginRight="70sp"
-        android:layout_marginLeft="70sp"
-        android:layout_below="@id/titulo_productos"
-        />
+        android:text="Código Producto"
+        android:textColor="@color/blanco"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline36"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
     <TextView
         android:id="@+id/tv_nombre_prodcuto_item"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Nombre"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_marginLeft="70sp"
-        android:layout_marginRight="70sp"
         android:layout_below="@id/tv_producto_id_item"
-        />
+        android:gravity="center_horizontal"
+        android:text="Nombre"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline36" />
+
     <TextView
         android:id="@+id/tv_precio_procuto_item"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Precio"
-        android:textSize="20sp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_marginRight="70sp"
-        android:layout_marginLeft="70sp"
         android:layout_below="@+id/tv_nombre_prodcuto_item"
-        />
+        android:gravity="center_horizontal"
+        android:text="Precio"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline38"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline37" />
+
     <TextView
         android:id="@+id/tv_cantidad_producto_item"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Cantidad"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_marginLeft="70sp"
-        android:layout_marginRight="70sp"
         android:layout_below="@+id/tv_precio_procuto_item"
-        />
+        android:gravity="center_horizontal"
+        android:text="Cantidad"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline39"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline38" />
+
     <TextView
         android:id="@+id/tv_tipo_producto_item"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Tipo Producto"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10sp"
-        android:layout_marginLeft="70sp"
-        android:layout_marginRight="70sp"
         android:layout_below="@+id/tv_cantidad_producto_item"
-        />
+        android:gravity="center_horizontal"
+        android:text="Tipo Producto"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline39" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_tipo_vacio"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tv_cantidad_producto_item"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:layout_constraintTop_toTopOf="@+id/guideline40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="37dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-1dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="33dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="59dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="84dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="112dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="134dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="157dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

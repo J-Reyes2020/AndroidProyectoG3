@@ -1,64 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EliminarCliente"
-    android:background="@color/negro">
+    android:background="@color/negro"
+    tools:context=".EliminarCliente">
 
     <TextView
         android:id="@+id/tv_titulo_clientes_crud"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Modificar Clientes"
         android:gravity="center_horizontal"
-        android:layout_marginTop="250sp"
-        android:textSize="25sp"
+        android:text="Modificar Clientes"
         android:textColor="@color/blanco"
-        />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
     <EditText
         android:id="@+id/et_id_client"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
         android:layout_below="@+id/tv_titulo_clientes_crud"
-        android:textSize="20sp"
+        android:gravity="center_horizontal"
         android:hint="Código"
         android:textColorHint="@color/gris"
-        android:gravity="center_horizontal"
-        android:layout_marginRight="60sp"
-        android:layout_marginLeft="60sp"
-        />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
 
     <Button
         android:id="@+id/btn_eliminar_cliente_eliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Eliminar"
-        android:gravity="center_horizontal"
         android:layout_below="@+id/et_id_client"
-        android:layout_marginTop="20sp"
-        android:layout_marginRight="80sp"
-        android:layout_marginLeft="80sp"
-        android:onClick="onClickEliminarCliente"
+        android:layout_marginHorizontal="100sp"
         android:background="@drawable/boton_redondo"
+        android:gravity="center_horizontal"
+        android:onClick="onClickEliminarCliente"
+        android:text="Eliminar"
         android:textColor="@color/blanco"
-        />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
     <Button
         android:id="@+id/btn_regresar_eliminar_cliente_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Regresar"
-        android:gravity="center_horizontal"
         android:layout_below="@+id/btn_eliminar_cliente_eliminar"
-        android:layout_marginTop="20sp"
-        android:layout_marginRight="95sp"
-        android:layout_marginLeft="95sp"
+        android:layout_marginHorizontal="100sp"
         android:background="@drawable/boton_redondo"
+        android:gravity="center_horizontal"
+        android:text="Regresar"
         android:textColor="@color/blanco"
-        />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
-</RelativeLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="210dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="325dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="69dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="323dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="421dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="485dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="552dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
